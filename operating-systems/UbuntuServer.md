@@ -63,7 +63,7 @@ Run the following commands:<br>
 `sudo apt upgrade`
 
 
-## Configure Ubuntu
+## Configure Ubuntu SSH
 SSH connection currently will not function. So let's set it up.
 
 Shut down the machine:<br>
@@ -77,7 +77,33 @@ Click the green `Add new rule` button on the top right.
 **Host Port**: `22`<br>
 **Guest Port**: `22`
 
-Spin your Ubuntu Server VM back up.<br>
+Spin your Ubuntu Server VM back up.
+
+Update Ubuntu:<br>
+`$  sudo apt update`<br>
+`$  sudo apt upgrade`
+
+Install OpenSSH:<br>
+`$  sudo apt install openssh-server`
+
+Check that the SSH service is running:
+`$  sudo systemctl status ssh`
+
+Now, you'll need to assign the Ubuntu's IP address unique, otherwise it will cause errors.
+
+<!-- 
+ToDo
+Change the IP address of Ubuntu Desktop through the terminal.
+Use the instructions to change the YAML file. 
+
+Instructions in two places: Chatgpt tab,  and my own Notes :)
+
+I'll need to do this to do the other instances as well.
+I've done it countless times. It's easy! :)
+ -->
+
+
+
 Open your Windows terminal window.
 
 Connect via SSH:<br>

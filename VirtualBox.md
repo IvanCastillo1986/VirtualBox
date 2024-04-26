@@ -20,6 +20,25 @@ Accept the default configurations.
 Open VirtualBox.
 
 ## Create Virtual Machine in VirtualBox
-To create a new Virtual Machine, click on the  **'New'**  button.
+To create a new Virtual Machine, click on the  **'New'**  button in the top bar.
 
-### Virtual machine Name and Operating System
+## Unattended Guest OS Install Setup
+VirtualBox allows for an automatic install.
+
+**Username and Password**<br>
+These are the default credentials:
+**Username**: `vboxuser`<br>
+**Password**: `changeme`<br>
+
+These need to be changed!<br>
+Otherwise the default credentials will create a user without sudo access!
+**Username**: `vboxuser`<br>
+**Password**: `changeme`<br>
+
+**Guest Additions**: `check`<br>
+This will install the `VBoxGuestAdditions.iso` file included with VirtualBox by default.
+
+Select your resource allocation.
+
+The Unattended Installation should begin doing its thing automatically.
+
