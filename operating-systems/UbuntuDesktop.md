@@ -30,6 +30,7 @@ View the **Summary**, then click `Finish`.
 Select the created Ubuntu-desktop Virtual machine in the left panel.
 
 ### Updates and other software
+Select the option to proceed with **Safe graphics**.
 **What apps would you like to start with?**: `Minimal installation`<br> 
 NOTE: this is for a security lab, so you won't need the bells and whistles.
 **Other options**: `Download updates while installing Ubuntu`<br>
